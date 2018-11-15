@@ -114,7 +114,6 @@ let db = new sqlite3.Database('db_quizz', (err) => {
   db.serialize((err) => {
     // db.run("DROP TABLE IF EXISTS *");
     db.run("CREATE TABLE IF NOT EXISTS user (id integer PRIMARY KEY AUTOINCREMENT, pseudo text)");
-    console.log('ahahahah');
     if (err) throw err;
     else {
       console.log(">>>Connexion à la base de données réussi<<<");

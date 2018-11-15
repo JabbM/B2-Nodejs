@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const db = require('./createDb')
 const program = require('commander')
 
 let t = 0
